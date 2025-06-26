@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: #F2F5F2;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 29px 0px rgba(100, 100, 111, 0.2);
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.links{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.links li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    transition: color 0.3s ease-in;
+}
+
+.links li a:hover{
+    color: #52C482;
+}
+
+.action-btn button{
+    cursor: pointer;
+    margin-left: 1rem;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.signup-btn{
+    background-color: #52C482;
+    transition: all 0.2s ease-in-out;
+}
+
+.signup-btn:hover{
+    background-color: #49a16e;
+}
+
+.theme button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    align-items: center;
+}
+
+.divider{
+    background-color: rgb(176, 167, 167);
+    height: 3px;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.main-content{
+    margin: 0 5rem;
+}
+
+section{
+    margin-bottom: 5rem;
+}
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 6rem 0;
+}
+
+.hero-image img{
+    width: 35rem;
+}
+
+.hero-text{
+    margin-left: 1rem;
+}
+
+.title{
+    font-size: 4rem;
+}
+
+.subtitle{
+    font-size: 2rem;
+}
+
+
+.hero-btn button, .cta-btn button{
+    cursor: pointer;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    height: 48px;
+    width: 180px;
+    margin-top: 10px;
+}
+
+.join, .cta-post{
+    background-color: #52C482;
+    transition: all 0.3s ease-in-out;
+}
+
+.join:hover, .cta-post:hover{
+    background-color: #49a16e;
+}
+
+.post, .cta-join{
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.post:hover, .cta-join:hover{
+    background-color: #d2caca;
+}
+
+.text{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.categories, .freelancers, .reasons{
+    display: flex;
+    gap: 2rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  height: 8rem;
+  width: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0px 7px 20px 0px rgba(100, 100, 111, 0.2);
+  margin-bottom: 1rem;
+}
+
+.card-img img{
+    width: 30%;
+}
+
+.card-text {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #333;
+  
+}
+
+.freelancers-card {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 1rem;
+    z-index: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.freelancers-card:hover {
+  transform: translateY(-5px);
+  z-index: -1;
+}
+
+.freelancers-card .card-img{
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+}
+
+.freelancers-card .card-img img{
+    width: 15rem;
+}
+
+.name{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.role{
+    font-size: 0.8rem;
+    color: #656262;
+}
+
+.reasons{
+    padding: 40px 16px;
+}
+
+.reason-card {
+    height: 157px;
+    width: max-content;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 7px 20px 0px rgba(100, 100, 111, 0.2);
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon{
+    margin-bottom: 12px;
+}
+.icon img{
+    width: 150%;
+}
+
+.reason{
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+}
+
+.desc{
+    font-size: 14px;
+    width: 189px;
+    height: 63px;
+    color: #656262;
+}
+
+.reason-card:hover {
+  transform: translateY(-5px);
+}
+
+.cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-text{
+    align-items: center;
+    text-align: center;
+    width: 720px;
+}
+.cta-text p{
+    font-size: 36px;
+    font-weight: 700;
+}
